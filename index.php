@@ -19,10 +19,10 @@
 						<a class="nav-link" href="#">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Books</a>
+						<a class="nav-link" href="./books.php">Books</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact Us</a>
+						<a class="nav-link" href="./contact.php">Contact Us</a>
 					</li>
 				</ul>
 			</div>
@@ -35,7 +35,7 @@
 			<div class="container" style="margin-top:70px; margin-bottom:20px">
 				<h1>Welcome to our Book Shop</h1>
 				<p>Browse and buy your favorite books</p>
-				<a href="#" class="btn btn-primary">View books list</a>
+				<a href="./books.php" class="btn btn-primary">View all books</a>
 			</div>
 		</section>
 
