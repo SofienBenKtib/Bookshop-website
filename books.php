@@ -32,6 +32,41 @@
 		</nav>
 	</header>
 	<div style="margin-top:70px"><h2>Books list</h2></div>
-    
+    <?php
+	include("connexion.php");
+	//appel de la fonction de connexion
+	$bdd=maConnexion(); 
+	//execution de la requête de sélection
+	$reponse=$bdd->query('SELECT * FROM book') or die($bdd->errorInfo()[2]);
+	//affichage
+	?>
+	<h3 style="margin-left:32px">Books number :  <?php echo  $reponse->rowCount() ?> </h3>
+	<?php 
+	$ligne=$reponse->fetchObject();
+	?>
+	<table>
+		<?php 
+		foreach ($ligne as $numcol => $val)
+			echo "<th> $numcol </th>";
+			echo "<tr>";
+			do{
+				?>
+				<tr>
+					<td> <?=$ligne->id; ?></td>
+					<td> <?=$ligne->Name; ?></td>
+					<td> <?=$ligne->Author; ?></td>
+					<td> <?=$ligne->Price; ?></td>
+					<td> <?=$ligne->Availability; ?></td>
+			    </tr>
+				<?php
+			}while($ligne = $reponse->fetchObject());
+			?>
+	</table>
+	<?php
+	$reponse->closeCursor();
+	//fermer la connexion
+	$bdd=null;
+		
+		?>
 </body>
 </html>
