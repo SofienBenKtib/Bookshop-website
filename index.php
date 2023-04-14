@@ -86,12 +86,15 @@
 			</div>
 		</
 </main>
-<div style="margin-top:50px"/>
+<div style="margin-top:100px"/>
 <!-- Footer -->
- <footer class="bg-dark text-center text-light-start">
-  <div class="text-center p-3" style="background-color: black;">
-    <p class="text-light ">© 2023 Copyright : Sofien Ben Ktib</p>
+<footer class="bg-dark text-center text-light-start fixed-bottom">
+  <div class="text-center p-3">
+    <p class="text-light mb-0">© 2023 Copyright :
+      <a href="#" class="text-light fw-bold">Sofien Ben Ktib</a>
+    </p>
   </div>
 </footer>
+
 
 </body>

@@ -12,7 +12,7 @@
 <body>
 <header>
 		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-			<a class="navbar-brand" href="#">Book Shop</a>
+			<a class="navbar-brand" href="./index.php">Book Shop</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -31,8 +31,14 @@
 			</div>
 		</nav>
 	</header>
+    <div style="margin-top:70px">
     <h2>Contact us</h2>
-    <form action="account.php" method="post" style="padding:50px">
+    </div>
+    <form action="message.php" method="post" style="padding:50px">
+    <div class="form-group">
+    <label for="name">Name </label>
+    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+  </div>
     <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">

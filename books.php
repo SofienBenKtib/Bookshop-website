@@ -12,7 +12,7 @@
 <body>
 <header>
 		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-			<a class="navbar-brand" href="#">Book Shop</a>
+			<a class="navbar-brand" href="./index.php">Book Shop</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -31,6 +31,7 @@
 			</div>
 		</nav>
 	</header>
-    <h2>Books list</h2>
+	<div style="margin-top:70px"><h2>Books list</h2></div>
+    
 </body>
 </html>
