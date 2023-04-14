@@ -37,7 +37,7 @@
     <form action="message.php" method="post" style="padding:50px">
     <div class="form-group">
     <label for="name">Name </label>
-    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+    <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" placeholder="Name">
   </div>
     <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>

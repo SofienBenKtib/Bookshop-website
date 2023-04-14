@@ -27,7 +27,12 @@
 </head>
 <body>
 <div class="container">
-    <p>Dear [Name],</p>
+    <?php 
+    if(isset($_POST['name'])){
+        $name=$_POST['name'];
+    }
+    ?>
+    <p>Dear <?php echo " " .$name ." ," ?></p>
     <p>Thank you for reaching us, we will contact you soon.</p>
     <p>Return to <a href="./index.php">Home</a></p>
   </div>
