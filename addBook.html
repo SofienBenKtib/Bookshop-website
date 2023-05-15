@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Form</title>
+    <link rel="stylesheet" href="addBook.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Add a Book</h1>
+      <form class="form" action="AddBook.php">
+        <div class="form-group">
+          <label class="form-label" for="name">Name</label>
+          <input
+            class="form-control"
+            type="text"
+            id="name"
+            name="bookName"
+            placeholder="The book's name"
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="author">Author</label>
+          <input
+            class="form-control"
+            type="text"
+            id="author"
+            name="author"
+            placeholder="The author's name"
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="price">Price</label>
+          <input
+            class="form-control"
+            type="number"
+            id="price"
+            name="price"
+            placeholder="Enter the book's price"
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="availability">Availability</label>
+          <div class="select-wrapper">
+            <select class="form-control" id="availability" name="availability">
+              <option value="True">True</option>
+              <option value="False">False</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-buttons">
+          <button class="btn btn-primary" type="submit">Add</button>
+          <button class="btn btn-secondary" type="reset">Clear</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
