@@ -16,27 +16,24 @@
 				<div class="card">
 					<div class="card-header bg-dark text-white">Signup</div>
 					<div class="card-body">
-						<form action="index.php">
+						<form action="addUser.php" method="POST">
 							<div class="form-group">
 								<label for="firstName">First Name:</label>
-								<input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+								<input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter First Name" required>
 							</div>
 							<div class="form-group">
 								<label for="lastName">Last Name:</label>
-								<input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+								<input type="text" class="form-control" id="lastName"  name="lastName" placeholder="Enter Last Name" required>
 							</div>
 							<div class="form-group">
 								<label for="email">Email:</label>
-								<input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+								<input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
 							</div>
 							<div class="form-group">
 								<label for="password">Password:</label>
-								<input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+								<input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
 							</div>
-							<div class="form-group">
-								<label for="confirmPassword">Confirm Password:</label>
-								<input type="password" class="form-control" id="confirmPassword" placeholder="Enter Confirm Password" required>
-							</div>
+
 							<button type="submit" class="btn btn-primary">Submit</button>
 						</form>
 					</div>

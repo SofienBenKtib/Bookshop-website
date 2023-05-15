@@ -21,15 +21,15 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-md-4 offset-md-4">
-        <form action="index.php">
+        <form action="verifLogin.php">
           <div class="form-group">
             <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
             
           </div>
           <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Password">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
             <small ><a href="index.php" class="text-secondary">I forgot my password</a></small>
           </div>
           <div class="text-center">

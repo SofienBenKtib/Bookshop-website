@@ -35,7 +35,7 @@
 		</nav>
 	</header>
     <div style="margin-top:70px">
-    <h2>Contact us</h2>
+    <h2>Contact</h2>
     </div>
     <form action="message.php" method="post" style="padding:50px">
     <div class="form-group">

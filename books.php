@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 <body>
 <header>
 		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
@@ -43,7 +44,23 @@
 	$reponse=$bdd->query('SELECT * FROM book') or die($bdd->errorInfo()[2]);
 	//affichage
 	?>
-	<h3 style="margin-left:32px">Books number :  <?php echo  $reponse->rowCount() ?> </h3>
+	
+	<div class="d-flex p-2 justify-content-between">
+	<h3 >Books number :  <?php echo  $reponse->rowCount() ?> </h3>
+	<div class="d-flex justify-content-end ">
+
+<a href="./addBook.html">
+<button class="btn btn-info">
+	<div class="d-flex justify-content-between">
+	<span class="material-symbols-outlined mr-5">
+				add_circle
+			</span>
+		Add a new book
+	</div>
+	</button>
+</a>
+	</div>
+</div>
 	<?php 
 	$ligne=$reponse->fetchObject();
 	?>
